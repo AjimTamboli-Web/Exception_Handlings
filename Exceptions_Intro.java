@@ -4,7 +4,12 @@ public class Exceptions_Intro {
 
 	public static void main(String[] args) {
 	
-/*
+/* How Exception works in JVM (flow)
+   1 When an exception occurs, JVM creates an Exception Object. ✔️ Example: ArithmeticException: / by zero 
+   2 The exception object is thrown to JVM
+   3 JVM searches for matching catch block
+   4 If found ☑️ → handles it . ❌ If not found → program terminates abnormally (crashes)
+  
  * Exception handling is a mechanism to handle runtime errors,allowing the normal flow of a program to continue.
  * Exceptions are events that occur during program execution that disrupt the normal flow of instructions.
  * Exception = Unwanted event that stops the normal flow of the program.To prevent program crash and to handle errors in a controlled way.
@@ -40,6 +45,21 @@ public class Exceptions_Intro {
 		
 		 // This line will executes weather an exception occurs or not
         System.out.println("This line want to be executed.");
+	
+        
+        
+ // You can have multiple try blocks in a program, just not in one structure.       
+        
+        String n = null;
+        try {
+        	  // This will throw an NullPointerException
+        	System.out.println(n.length());
+        }
+        catch(Exception e){
+        	System.out.println("Null ex: " + e);
+        }
+        
+        System.out.println("<<<<<<<<<< end >>>>>>>>>>>>");
 	}
 
 }

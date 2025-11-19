@@ -7,7 +7,7 @@ public class Throw_Exception {
 /*
  * throw: Used to explicitly throw a single exception. We use throw when something goes wrong 
            (or “shouldn’t happen”) and we want to stop normal flow and hand control to exception handling.
- *   Throw use for throw exception manually.      
+ *   Throw use for throw exception manually.  for custom logic with throw and new keyword    
  */
 		System.out.println(">>>>>>>>>>>> Start <<<<<<<<<<<<<<<");
 		
@@ -35,12 +35,14 @@ public class Throw_Exception {
 		finally {
 			System.out.println("<<<<<<<<<< The End >>>>>>>>>>");
 		}
+		
+		
 
 		try {
 			int i = 10/0;
-			 throw new Error_Ex("Arithmethic Exception");
+			 throw new Error_Ex("Arithmethic Exception");  // you can say that it's using constructor
 		}
-		catch(Error_Ex e) {
+		catch(Error_Ex e) {  // for creating object of class using reference
 			System.out.println(e.getMessage());
 		}
 		finally {
@@ -49,9 +51,16 @@ public class Throw_Exception {
 		
 	}
 }
-
+/*
+ * Custom exceptions you can create two types of custom exceptions in java
+ * a) Checked - compile time custom exception
+ * b) Unchecked - Runtime custom exception
+ * The measure difference between these two is that in the compile time(Checked) you will be force to handle it at compile time
+    with the try catch and finally block.
+ *  while in the runtime or unchecked it's optional for you to write try catch and finally block.
+ */
 class Error_Ex extends Exception{
-	Error_Ex(String s){
-		super(s);
+	Error_Ex(String s){ // constructor 
+		super(s);  // calling parent parameterized constructor 
 	}
 }

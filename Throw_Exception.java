@@ -59,7 +59,7 @@ public class Throw_Exception {
     with the try catch and finally block.
  *  while in the runtime or unchecked it's optional for you to write try catch and finally block.
  */
-class Error_Ex extends Exception{
+class Error_Ex extends Exception{ // compile-time because it need try catch block
 	Error_Ex(String s){ // constructor 
 		super(s);  // calling parent parameterized constructor 
 	}

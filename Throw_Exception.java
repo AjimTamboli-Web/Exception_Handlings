@@ -5,8 +5,11 @@ public class Throw_Exception {
 	public static void main(String[] args) {
 	
 /*
+ *⭕ throw keyword is used to create object of the exception. ⭕throw is used at the statement level at the program.
+  ⭕ throw can only subclass of throwable.   ⭕ throw can throw a single exception at a time.
+  	
  * throw: Used to explicitly throw a single exception. We use throw when something goes wrong 
-           (or “shouldn’t happen”) and we want to stop normal flow and hand control to exception handling.
+           (or “should'nt happen”) and we want to stop normal flow and hand control to exception handling.
  *   Throw use for throw exception manually.  for custom logic with throw and new keyword    
  */
 		System.out.println(">>>>>>>>>>>> Start <<<<<<<<<<<<<<<");
@@ -59,6 +62,7 @@ public class Throw_Exception {
     with the try catch and finally block.
  *  while in the runtime or unchecked it's optional for you to write try catch and finally block.
  */
+// Is-A relation
 class Error_Ex extends Exception{ // compile-time because it need try catch block
 	Error_Ex(String s){ // constructor 
 		super(s);  // calling parent parameterized constructor 

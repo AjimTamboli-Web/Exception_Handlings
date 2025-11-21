@@ -9,9 +9,9 @@ public class Throw_Operations {
 	⭕ case 1:you will have to catch all the 2,3 custom exception in the catch block.
 	⭕ case 2:you can directly handle the root exception & you won't have any need to handle the children exceptions.
 
-*   Pipe Operator => symbol (|)
-*   The pipe operator (|) is used in Java 7 onward to handle multiple exceptions in a single catch block.
-*   This feature is called Multi-catch Exception Handling.
+* ⏺️   Pipe Operator => symbol (|)
+      The pipe operator (|) is used in Java 7 onward to handle multiple exceptions in a single catch block.
+     This feature is called Multi-catch Exception Handling.
 * 🧠 Rules of Pipe Operator ->
 *   ✅ 1. Exceptions must NOT have a parent-child relationship
 *   ✅ 2. Only one common exception variable is allowed
@@ -46,7 +46,7 @@ public class Throw_Operations {
 //      }
       
       // Custom Exceptions
-/*		catch(Op1 op) {
+/*		catch(Op1 op) {  // multiple catch block with single try block
 //			System.out.println(op.getMessage());
 //			}
 //        	catch(Op2 op) {
